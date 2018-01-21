@@ -202,7 +202,7 @@ def no_cythonize(extensions, **_ignore):
                 else:
                     ext = '.c'
                 sfile = path + ext
-            elif ext in ('.pxd'):
+            elif ext in ('.pxd',):
                 continue
             sources.append(sfile)
         extension.sources[:] = sources
